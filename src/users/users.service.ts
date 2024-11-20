@@ -13,15 +13,15 @@ export class UsersService {
     @InjectRepository(Users)
     private readonly usersRepository: Repository<Users>,
     private readonly jwtService: JwtService,
-  ) {}
+  ) { }
 
   // 邮件传输器
   private ransporter = nodeMailer.createTransport({
     host: 'smtp.qq.com',
     secure: true,
     auth: {
-      user: '2602685411@qq.com',
-      pass: 'bvrgjtoejrzbecbf',
+      user: 'xxx',
+      pass: 'xxx',
     },
   });
 
